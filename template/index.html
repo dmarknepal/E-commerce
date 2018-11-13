@@ -11,16 +11,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-    <link href="js/myCart.js">
-
-
-    <script src="js/myStore.js" async></script>
-
-
-
-
 </head>
-<body class="cms-index-index index-opt-8">
+<body  class="cms-index-index index-opt-8">
 
     <div class="wrapper">
 
@@ -108,10 +100,10 @@
                                     <span>Search</span>
                                 </div>
                                 <div class="block-content">
-                                    <div class="categori-search  ">
+                                    <div class="categori-search">
                                         <select data-placeholder="All Categories" class="categori-search-option">
-                                            <option>All Categories</option>
-                                            <option>Fashion</option>
+                                            <option >All Categories</option>
+                                            <option >Fashion</option>
                                             <option>Tops Blouses</option>
                                             <option>Clothing</option>
                                             <option>Furniture</option>
@@ -135,89 +127,83 @@
                         <div class="col-md-4 col-lg-3  nav-right">
 
                             <!-- block mini cart -->
-                            <div  id="cart-info"  class="block-minicart dropdown">
-                                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown"  >
+                            <div class="block-minicart dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
                                     <span class="cart-icon"></span>
                                     <span class="counter qty">
                                         <span class="cart-text">cart</span>
-                                        <span class="counter-number" id="cartValue">0</span>
-                                        <!--<span class="counter-label">6 <span>Item(s)</span></span>-->
+                                        <span class="counter-number">6</span>
+                                        <span class="counter-label">6 <span>Item(s)</span></span>
                                         <span class="counter-price">$75.00</span>
                                     </span>
                                 </a>
                                 <div class="dropdown-menu">
                                     <form>
-                                        <div  class="minicart-content-wrapper" id="cart" >
-                                            <ol class="minicart-items">
-                                                <li class="product-item">
-                                                    <a class="product-item-photo" href="#" title="The Name Product">
-                                                        <img class="product-image-photo" src="images/media/index1/minicart.jpg" alt="The Name Product">
-                                                    </a>
-                                                    <div class="product-item-details">
-                                                        <strong class="product-item-name">
-                                                            <a href="#">Apple </a>
-                                                        </strong>
-                                                        <div class="product-item-qty">
-                                                            <input class="cart-qty-input" type="number" value="2">
+                                        <div  class="minicart-content-wrapper" >
+                                            <div class="subtitle">
+                                                You have 6 item(s) in your cart
+                                            </div>
+                                            <div class="minicart-items-wrapper">
+                                                <ol class="minicart-items">
+                                                    <li class="product-item">
+                                                        <a class="product-item-photo" href="#" title="The Name Product">
+                                                            <img class="product-image-photo" src="images/media/index1/minicart.jpg" alt="The Name Product">
+                                                        </a>
+                                                        <div class="product-item-details">
+                                                            <strong class="product-item-name">
+                                                                <a href="#">Burberry Pink &amp; black</a>
+                                                            </strong>
+                                                            <div class="product-item-qty">
+                                                                <span class="label">Quantity:</span ><span class="number">6</span>
+                                                            </div>
+                                                            <div class="product-item-price">
+                                                                <span class="price"> $17.96</span>
+                                                            </div>
+                                                            <div class="product-item-actions">
+                                                                <a class="action delete" href="#" title="Remove item">
+                                                                    <span>Remove</span>
+                                                                </a>
+                                                            </div>
                                                         </div>
-                                                        <div class="product-item-price">
-                                                            <span class="price"> 12</span>
+                                                    </li>
+                                                    <li class="product-item">
+                                                        <a class="product-item-photo" href="#" title="The Name Product">
+                                                            <img class="product-image-photo" src="images/media/index1/minicart.jpg" alt="The Name Product">
+                                                        </a>
+                                                        <div class="product-item-details">
+                                                            <strong class="product-item-name">
+                                                                <a href="#">Burberry Pink &amp; black</a>
+                                                            </strong>
+                                                            <div class="product-item-qty">
+                                                                <span class="label">Quantity:</span ><span class="number">6</span>
+                                                            </div>
+                                                            <div class="product-item-price">
+                                                                <span class="price"> $17.96</span>
+                                                            </div>
+                                                            <div class="product-item-actions">
+                                                                <a class="action delete" href="#" title="Remove item">
+                                                                    <span>Remove</span>
+                                                                </a>
+                                                            </div>
                                                         </div>
-
-                                                            <button type="button" class="close" aria-label="Close">
-                                                                <span aria-hidden="true">&times;</span>
-                                                            </button>
-
-
-                                                            </a>
-
-                                                    </div>
-                                                </li>
-
-
-
-                                                <li class="product-item">
-                                                    <a class="product-item-photo" href="#" title="The Name Product">
-                                                        <img class="product-image-photo" src="images/media/index1/minicart.jpg" alt="The Name Product">
-                                                    </a>
-                                                    <div class="product-item-details">
-                                                        <strong class="product-item-name">
-                                                            <a href="#">Burberry Pink &amp; black</a>
-                                                        </strong>
-                                                        <div class="product-item-qty">
-                                                            <input class="cart-qty-input" type="number" value="2">
-
-                                                        </div>
-                                                        <div class="product-item-price">
-                                                            <span class="price"> $17.96</span>
-                                                        </div>
-                                                        <button type="button" class="close" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                </li>
-
-                                            </ol>
-
-
-
+                                                    </li>
+                                                </ol>
+                                            </div>
                                             <div class="subtotal">
                                                 <span class="label">Total</span>
-                                                <span class="cart-total-price">$630</span>
+                                                <span class="price">$630</span>
                                             </div>
                                             <div class="actions">
                                                 <a class="btn btn-viewcart" href="Checkout.html">
                                                     <span>Shopping bag</span>
                                                 </a>
-                                                <a href="#" class="btn btn-checkout" type="button" title="Check Out">
+                                                <a href="Login.html" class="btn btn-checkout" type="button" title="Check Out">
                                                     <span>Check out</span>
                                                 </a>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
-
-
                             </div><!-- block mini cart -->
 
 
@@ -937,33 +923,28 @@
                             "1200":{"items":4}
                             }'>
 
-                                        <div class="product-item product-item-opt-2" id="main">
+                                        <div class="product-item product-item-opt-2">
                                             <div class="product-item-info">
                                                 <div class="product-item-photo">
-                                                    <a class="product-item-img" href=""><img alt="product name" class="product-item-pics" src="images/media/index10/deals-of1.jpg"  id="pics"></a>
+                                                    <a class="product-item-img" href=""><img alt="product name" src="images/media/index10/deals-of1.jpg" ></a>
                                                     <div class="product-item-actions">
-                                                        <a class="btn btn-wishlist" onclick="addedToWishList()" href="#"><span>wishlist</span></a>
+                                                        <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                         <a class="btn btn-compare" href=""><span>compare</span></a>
                                                         <a class="btn btn-quickview" href=""><span>quickview</span></a>
                                                     </div>
-                                                    <button type="button" class="btn btn-cart shop-item-button
-                                                    shop-item-button shop-item-button shop-item-button
-                                                    shop-item-button shop-item-button "   onclick="addToCart()" ><span>Add to Cart</span></button>
-                                                    <p id="d"></p>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                 </div>
                                                 <div class="product-item-detail">
-                                                    <div class="product-item-name" id="Name"  ><a href="">A5 Galaxy Smartphone</a></div>
+                                                    <strong class="product-item-name"><a href="">A5 Galaxy Smartphone</a></strong>
                                                     <div class="clearfix">
-
-
-                                                        <div class="product-item-price"  id="Price" >
+                                                        <div class="product-item-price">
                                                             <span class="price">$38.95</span>
-
+                                                            <span class="old-price">   $52.00</span>
                                                         </div>
-                                                        <div class="product-reviews-summary" id="Desc" >
+                                                        <div class="product-reviews-summary">
                                                             <div class="rating-summary">
                                                                 <div class="rating-result" title="80%">
-                                                        <span style="width:80%" >
+                                                        <span style="width:80%">
                                                             <span><span>80</span>% of <span>100</span></span>
                                                         </span>
                                                                 </div>
@@ -976,15 +957,13 @@
                                         <div class="product-item product-item-opt-2">
                                             <div class="product-item-info">
                                                 <div class="product-item-photo">
-                                                    <a class="product-item-img" href=""><img alt="product name" class="product-item-pics" src="images/media/index10/deals-of2.jpg" ></a>
+                                                    <a class="product-item-img" href=""><img alt="product name" src="images/media/index10/deals-of2.jpg" ></a>
                                                     <div class="product-item-actions">
                                                         <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                         <a class="btn btn-compare" href=""><span>compare</span></a>
                                                         <a class="btn btn-quickview" href=""><span>quickview</span></a>
                                                     </div>
-
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button" onclick="removeFromCart()" ><span>Add to Cart</span></button>
-
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                 </div>
                                                 <div class="product-item-detail">
                                                     <strong class="product-item-name"><a href="">Trending Smartphone</a></strong>
@@ -1008,13 +987,13 @@
                                         <div class="product-item product-item-opt-2">
                                             <div class="product-item-info">
                                                 <div class="product-item-photo">
-                                                    <a class="product-item-img" href=""><img alt="product name"  class="product-item-pics" src="images/media/index10/deals-of3.jpg" ></a>
+                                                    <a class="product-item-img" href=""><img alt="product name" src="images/media/index10/deals-of3.jpg" ></a>
                                                     <div class="product-item-actions">
                                                         <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                         <a class="btn btn-compare" href=""><span>compare</span></a>
                                                         <a class="btn btn-quickview" href=""><span>quickview</span></a>
                                                     </div>
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                 </div>
                                                 <div class="product-item-detail">
                                                     <strong class="product-item-name"><a href="">Silver Color Mobile</a></strong>
@@ -1038,13 +1017,13 @@
                                         <div class="product-item product-item-opt-2">
                                             <div class="product-item-info">
                                                 <div class="product-item-photo">
-                                                    <a class="product-item-img" href=""><img alt="product name"  class="product-item-pics" src="images/media/index10/deals-of4.jpg" ></a>
+                                                    <a class="product-item-img" href=""><img alt="product name" src="images/media/index10/deals-of4.jpg" ></a>
                                                     <div class="product-item-actions">
                                                         <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                         <a class="btn btn-compare" href=""><span>compare</span></a>
                                                         <a class="btn btn-quickview" href=""><span>quickview</span></a>
                                                     </div>
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                 </div>
                                                 <div class="product-item-detail">
                                                     <strong class="product-item-name"><a href="">New Generation Camera</a></strong>
@@ -1068,13 +1047,13 @@
                                         <div class="product-item product-item-opt-2">
                                             <div class="product-item-info">
                                                 <div class="product-item-photo">
-                                                    <a class="product-item-img" href=""><img alt="product name"  class="product-item-pics" src="images/media/index10/deals-of3.jpg" ></a>
+                                                    <a class="product-item-img" href=""><img alt="product name" src="images/media/index10/deals-of3.jpg" ></a>
                                                     <div class="product-item-actions">
                                                         <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                         <a class="btn btn-compare" href=""><span>compare</span></a>
                                                         <a class="btn btn-quickview" href=""><span>quickview</span></a>
                                                     </div>
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                 </div>
                                                 <div class="product-item-detail">
                                                     <strong class="product-item-name"><a href="">Silver Color Mobile</a></strong>
@@ -1098,13 +1077,13 @@
                                         <div class="product-item product-item-opt-2">
                                             <div class="product-item-info">
                                                 <div class="product-item-photo">
-                                                    <a class="product-item-img" href=""><img alt="product name"  class="product-item-pics" src="images/media/index10/deals-of4.jpg" ></a>
+                                                    <a class="product-item-img" href=""><img alt="product name" src="images/media/index10/deals-of4.jpg" ></a>
                                                     <div class="product-item-actions">
                                                         <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                         <a class="btn btn-compare" href=""><span>compare</span></a>
                                                         <a class="btn btn-quickview" href=""><span>quickview</span></a>
                                                     </div>
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                 </div>
                                                 <div class="product-item-detail">
                                                     <strong class="product-item-name"><a href="">New Generation Camera</a></strong>
@@ -1155,7 +1134,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Featured1.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1176,7 +1155,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Featured2.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1197,7 +1176,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Featured3.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1218,7 +1197,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Featured4.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1239,7 +1218,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Featured5.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1260,7 +1239,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Featured5.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1316,7 +1295,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Bestseller1.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1337,7 +1316,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Bestseller2.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1358,7 +1337,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Bestseller3.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1379,7 +1358,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Bestseller4.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1400,7 +1379,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Bestseller5.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1421,7 +1400,7 @@
                                             <div class="product-item-photo">
                                                 <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Bestseller5.jpg"></a>
                                                 <div class="product-item-actions">
-                                                    <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                    <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                     <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                     <a class="btn btn-compare" href=""><span>compare</span></a>
                                                     
@@ -1475,7 +1454,7 @@
                                                     <div class="product-item-photo">
                                                         <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Arrival1.jpg"></a>
                                                         <div class="product-item-actions">
-                                                            <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                            <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                             <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                             <a class="btn btn-compare" href=""><span>compare</span></a>
                                                             
@@ -1496,7 +1475,7 @@
                                                     <div class="product-item-photo">
                                                         <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Arrival2.jpg"></a>
                                                         <div class="product-item-actions">
-                                                            <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                            <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                             <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                             <a class="btn btn-compare" href=""><span>compare</span></a>
                                                             
@@ -1519,7 +1498,7 @@
                                                     <div class="product-item-photo">
                                                         <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Arrival3.jpg"></a>
                                                         <div class="product-item-actions">
-                                                            <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                            <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                             <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                             <a class="btn btn-compare" href=""><span>compare</span></a>
                                                             
@@ -1540,7 +1519,7 @@
                                                     <div class="product-item-photo">
                                                         <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Arrival4.jpg"></a>
                                                         <div class="product-item-actions">
-                                                            <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                            <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                             <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                             <a class="btn btn-compare" href=""><span>compare</span></a>
                                                             
@@ -1563,7 +1542,7 @@
                                                     <div class="product-item-photo">
                                                         <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Arrival5.jpg"></a>
                                                         <div class="product-item-actions">
-                                                            <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                            <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                             <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                             <a class="btn btn-compare" href=""><span>compare</span></a>
                                                             
@@ -1584,7 +1563,7 @@
                                                     <div class="product-item-photo">
                                                         <a class="product-item-img" href=""><img alt="product name" src="images/media/index8/Arrival6.jpg"></a>
                                                         <div class="product-item-actions">
-                                                            <button type="button" class="btn btn-cart shop-item-button shop-item-button shop-item-button shop-item-button shop-item-button"><span>Add to Cart</span></button>
+                                                            <button type="button" class="btn btn-cart"><span>Add to Cart</span></button>
                                                             <a class="btn btn-wishlist" href=""><span>wishlist</span></a>
                                                             <a class="btn btn-compare" href=""><span>compare</span></a>
                                                             
@@ -3339,16 +3318,6 @@
         <a href="#" class="back-to-top">
             <i aria-hidden="true" class="fa fa-angle-up"></i>
         </a>
-
-
-
-
-
-
-
-
-
-
         
     </div>
 
@@ -3367,7 +3336,7 @@
     <!-- Countdown -->    
     
     <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-    <script type="text/javascript" src="js/myCart.js"></script>
+
     <!-- Chosen jquery-->    
     
     <script type="text/javascript" src="js/chosen.jquery.js"></script>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
+    <title>home page 8</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,16 +9,12 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/validation.js"></script>
-    <script src="js/arcticmodal/fetch.js"></script>
-    <script src="js/arcticmodal/login.js"></script>
 
 
 </head>
-<body class="index-opt-8 cms-page">
+<body class="cms-index-index index-opt-8">
 
 <div class="wrapper">
-
 
     <!-- HEADER -->
     <header class="site-header header-opt-8">
@@ -27,7 +23,7 @@
             <div class="container">
 
                 <ul class="hotline nav-left">
-                    <li><span class="wellcome">Welcome to BigShop <a href="Login.html">Register</a> <span>or</span> <a
+                    <li><span class="wellcome">Wellcome to BigShop <a href="Login.html">Register</a> <span>or</span> <a
                             href="Login.html">Login</a></span></li>
                 </ul>
 
@@ -111,7 +107,7 @@
                                 <span>Search</span>
                             </div>
                             <div class="block-content">
-                                <div class="categori-search  ">
+                                <div class="categori-search">
                                     <select data-placeholder="All Categories" class="categori-search-option">
                                         <option>All Categories</option>
                                         <option>Fashion</option>
@@ -211,12 +207,13 @@
                                             <span class="price">$630</span>
                                         </div>
                                         <div class="actions">
-                                            <a class="btn btn-viewcart" href="">
+                                            <a class="btn btn-viewcart" href="Checkout.html">
                                                 <span>Shopping bag</span>
                                             </a>
-                                            <button class="btn btn-checkout" type="button" title="Check Out">
+                                            <a href="Login.html" class="btn btn-checkout" type="button"
+                                               title="Check Out">
                                                 <span>Check out</span>
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                 </form>
@@ -591,6 +588,9 @@
                                 <!--<li><a href="Login.html">Login</a></li>-->
                                 <!--</ul>-->
                             </li>
+                            <li>
+                                <a href="Collection---grid.html">Collections</a>
+                            </li>
                             <li class="parent parent-megamenu">
                                 <a href="">Page Products</a>
                                 <span class="toggle-submenu"></span>
@@ -792,12 +792,12 @@
                                         <span class="price">$630</span>
                                     </div>
                                     <div class="actions">
-                                        <a class="btn btn-viewcart" href="">
+                                        <a class="btn btn-viewcart" href="Checkout.html">
                                             <span>Shopping bag</span>
                                         </a>
-                                        <button class="btn btn-checkout" type="button" title="Check Out">
+                                        <a href="Login.html" class="btn btn-checkout" type="button" title="Check Out">
                                             <span>Check out</span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </form>
@@ -886,341 +886,197 @@
 
 
     </header>
-    <!-- end HEADER -->
+    <!-- end HEADER -->g
 
     <!-- MAIN -->
-    <main class="site-main">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Product Name</h5>
+                    <p class="card-text">Product description</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <a class="btn btn-cart"><img src="images/shopping-cart.svg" alt="no image"></a>
 
-        <!-- breadcrumb -->
-        <div class="container breadcrumb-page">
-            <ol class="breadcrumb">
-                <li><a href="#">Home </a></li>
-                <li class="active">Authentication</li>
-            </ol>
-        </div> <!-- breadcrumb -->
-
-        <div class="page-title-base container">
-            <h1 class="title-base">authentication</h1>
-        </div>
-
-        <div class="container">
-
-
-            <div class="block-form-login">
-
-                <!-- block Create an Account -->
-                <div class="block-form-create">
-                    <div class="block-title">
-                        Create an Account
-                    </div>
-                    <div class="block-content">
-                        <form action="#" onsubmit="return validation()" method="get">
-                            <p>Please enter your email address to create an account!</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your email" id="email">
-                                <span id="emailadd" class="warning"></span>
-                            </div>
-                            <p>Enter your username</p>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Username" id="user">
-                                <span id="username" class="warning"></span>
-                            </div>
-
-
-                            <p>Enter your Password</p>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Your password" id="pass">
-                                <span id="password" class="warning"></span>
-                            </div>
-
-                            <p>Confirm Password</p>
-                            <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Confirm Password" id="confirm">
-                                <span id="cpw" class="warning"></span>
-                            </div>
-
-                            <p>Mobile Number</p>
-                            <div class="form-group">
-                                <input type="number" class="form-control" placeholder="Mobile Number" id="mobile">
-                                <span id="mnumber" class="warning"></span><br><br>
-                            </div>
-                            <button type="submit" class="btn btn-inline" id="register" onclick="result()">Register</button>
-                        </form>
-                    </div>
-                </div><!-- block Create an Account -->
-
-                <!-- block Registered-->
-                <div class="block-form-registered">
-
-                    <div class="block-title">
-                        Already Registered?
-                    </div>
-                    <div class="block-content">
-                        <p>If you have an account please enter the username & password her</p>
-                        <form action="#" onsubmit="return signIn()">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="userEmail" placeholder="Your email">
-                                <span id="ue" class="warning"></span>
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="pw" placeholder="Password">
-                                <span id="pw1" class="warning"></span>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"><span>Remember me!</span>
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-inline"  id="login" onclick="qwe()">Login</button>
-                        </form>
-                    </div>
-
-                </div><!-- block Registered-->
-
-            </div>
-
-            <!-- Forgot your password -->
-            <div class="block-forgot-pass">
-                Forgot your password ? <a href="">Click Here</a>
-            </div><!-- Forgot your password -->
-
-        </div>
-
-        <!-- block  service-->
-        <div class="block-service">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="item">
-                                <span class="icon">
-                                    <img src="images/icon/index1/service1.png" alt="service">
-                                </span>
-                            <strong class="title">Member Safe Shopping</strong>
-                            <span>Safe Shopping Guarantee</span>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="item">
-                                <span class="icon">
-                                    <img src="images/icon/index1/service2.png" alt="service">
-                                </span>
-                            <strong class="title">30- day return products</strong>
-                            <span>Moneyback guarantee</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="item">
-                                <span class="icon">
-                                    <img src="images/icon/index1/service3.png" alt="service">
-                                </span>
-                            <strong class="title">Free Shipping worldwide</strong>
-                            <span>On oder over $100</span>
-                        </div>
+                        <div class="col-sm-4"><a class="btn btn-danger">Remove</a></div>
                     </div>
                 </div>
             </div>
-        </div><!-- block  service-->
-
-    </main><!-- end MAIN -->
-
-    <!-- FOOTER -->
-    <footer class="site-footer footer-opt-8">
-
-        <div class="container">
-            <div class="footer-column">
-
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="row">
-                            <div class="col-md-4  col-sm-4">
-                                <div class="links">
-                                    <h3 class="title">Koolshop</h3>
-                                    <ul>
-                                        <li><a href="">About us</a></li>
-                                        <li><a href="">Customer Service</a></li>
-                                        <li><a href="">New Collection</a></li>
-                                        <li><a href="">Manufacturers</a></li>
-                                        <li><a href="">Privacy policy</a></li>
-                                        <li><a href="">Terms & condition</a></li>
-                                        <li><a href="">Blog</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4  col-sm-4">
-                                <div class="links">
-                                    <h3 class="title">Products</h3>
-                                    <ul>
-                                        <li><a href="">New In</a></li>
-                                        <li><a href="">Women</a></li>
-                                        <li><a href="">Men</a></li>
-                                        <li><a href="">Best Sellers</a></li>
-                                        <li><a href="">Top Brands</a></li>
-                                        <li><a href="">Sale & Special Offers</a></li>
-                                        <li><a href="">Lookbook</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-4  col-sm-4">
-                                <div class="links">
-                                    <h3 class="title">Customer Service</h3>
-                                    <ul>
-                                        <li><a href="">Advanced Search</a></li>
-                                        <li><a href="">Orders And Returns</a></li>
-                                        <li><a href="">Contacts US</a></li>
-                                        <li><a href="">RSS</a></li>
-                                        <li><a href="">Help & FAQ'S</a></li>
-                                        <li><a href="">Consultant</a></li>
-                                        <li><a href="">Store Locations</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-md-5 col-sm-12">
-                        <div class="block-social">
-                            <div class="block-title">Let’s Socialize</div>
-                            <div class="block-content">
-                                <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-
-                        <div class="block-newletter">
-                            <div class="block-title">SIGN UP FOR NEWSLETTER</div>
-                            <div class="block-content">
-                                <form>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Your Email Address">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-subcribe"
-                                                    type="button"><span>Subcribe</span></button>
-                                        </span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="payment-methods">
-                <img src="images/media/index8/payment1.jpg" alt="payment">
-                <img src="images/media/index8/payment2.jpg" alt="payment">
-                <img src="images/media/index8/payment3.jpg" alt="payment">
-                <img src="images/media/index8/payment4.jpg" alt="payment">
-                <img src="images/media/index8/payment5.jpg" alt="payment">
-                <img src="images/media/index8/payment6.jpg" alt="payment">
-                <img src="images/media/index8/payment7.jpg" alt="payment">
-                <img src="images/media/index8/payment8.jpg" alt="payment">
-                <img src="images/media/index8/payment9.jpg" alt="payment">
-                <img src="images/media/index8/payment10.jpg" alt="payment">
-                <img src="images/media/index8/payment11.jpg" alt="payment">
-                <img src="images/media/index8/payment12.jpg" alt="payment">
-                <img src="images/media/index8/payment13.jpg" alt="payment">
-                <img src="images/media/index8/payment14.jpg" alt="payment">
-            </div>
-
-            <div class="footer-bottom">
-                <div class="links">
-
-                    <ul>
-                        <li><a href="">Online Shopping </a></li>
-                        <li><a href="">Promotions </a></li>
-                        <li><a href="">My Orders </a></li>
-                        <li><a href="">Help </a></li>
-                        <li><a href="">Site Map </a></li>
-                        <li><a href="">Customer Service </a></li>
-                        <li><a href="">Support </a></li>
-                        <li><a href="">Most Populars </a></li>
-                        <li><a href="">Best Sellers </a></li>
-                        <li><a href="">New Arrivals </a></li>
-                        <li><a href="">Special Products </a></li>
-                    </ul>
-                    <ul>
-
-                        <li><a href="">Our Stores </a></li>
-                        <li><a href="">Shipping </a></li>
-                        <li><a href="">Payments </a></li>
-                        <li><a href="">Payments </a></li>
-                        <li><a href="">Refunds </a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="">Terms & Conditions </a></li>
-                        <li><a href="">Policy </a></li>
-                        <li><a href="">Policy </a></li>
-                        <li><a href=""> Shipping </a></li>
-                        <li><a href="">Payments </a></li>
-                        <li><a href="">Returns </a></li>
-                        <li><a href="">Refunds </a></li>
-                        <li><a href="">Warrantee </a></li>
-                        <li><a href="">FAQ </a></li>
-                        <li><a href="">Contact </a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="copyright">
-
-                Copyright © 2016 KoolShop. All Rights Reserved. Designed by KoolShop
-
-            </div>
-
         </div>
-    </footer>
-    <!-- end FOOTER -->
-
-    <!--back-to-top  -->
-    <a href="#" class="back-to-top">
-        <i aria-hidden="true" class="fa fa-angle-up"></i>
-    </a>
-
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="images/media/list1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- jQuery -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--
+<div class="container">
+    <div class="row">
+        <div class="subtitle">
+            You have 6 item(s) in your cart
+        </div>
+        <div class=" minicart-items-wrapper">
+            <div class="minicart-items">
+                <span class="product-item">
+                    <a class="product-item-photo" href="#" title="The Name Product">
+                        <img class="product-image-photo" src="images/media/index1/minicart.jpg" alt="The Name Product">
+                    </a>
+                    <div class="product-item-details">
+                        <strong class="product-item-name">
+                            <a href="#">Burberry Pink &amp; black</a>
+                        </strong>
+                        <div class="product-item-qty">
+                            <span class="label">Quantity:</span><span class="number">6</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span class="price"> $17.96</span>
+                        </div>
+                        <div class="product-item-actions">
+                            <a class="action delete" href="#" title="Remove item">
+                                <span>Remove</span>
+                            </a>
+                        </div>
+                    </div>
+                </span>
+                <span class="  product-item">
+                    <a class="product-item-photo" href="#" title="The Name Product">
+                        <img class="product-image-photo" src="images/media/index1/minicart.jpg" alt="The Name Product">
+                    </a>
+                    <div class="product-item-details">
+                        <strong class="product-item-name">
+                            <a href="#">Burberry Pink &amp; black</a>
+                        </strong>
+                        <div class="product-item-qty">
+                            <span class="label">Quantity:</span><span class="number">6</span>
+                        </div>
+                        <div class="product-item-price">
+                            <span class="price"> $17.96</span>
+                        </div>
+                        <div class="product-item-actions">
+                            <a class="action delete" href="#" title="Remove item">
+                                <span>Remove</span>
+                            </a>
+                        </div>
+                    </div>
+                </span>
 
-<!-- modernizr -->
-<script src="js/modernizr.js"></script>
+            </div>
+        </div>
+        <div class="subtotal">
+            <span class="label">Total</span>
+            <span class="price">$630</span>
+        </div>
+        <div class="actions">
+            <a class="btn btn-viewcart" href="Checkout.html">
+                <span>Shopping bag</span>
+            </a>
+            <a href="Login.html" class="btn btn-checkout" type="button" title="Check Out">
+                <span>Check out</span>
+            </a>
+        </div>
+    </div>
 
-<!-- Boostrap -->
-<script type="text/javascript" src="js/bootstrap.js"></script>
-
-<!-- sticky -->
-<script type="text/javascript" src="js/jquery.sticky.js"></script>
-
-<!-- OWL CAROUSEL Slider -->
-<script type="text/javascript" src="js/owl.carousel.js"></script>
-
-<!-- elevatezoom -->
-<script type="text/javascript" src="js/jquery.elevateZoom.min.js"></script>
-
-<!-- fancybox -->
-<script src="js/fancybox/source/jquery.fancybox.pack.js"></script>
-<script src="js/fancybox/source/helpers/jquery.fancybox-media.js"></script>
-<script src="js/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
-
-<!-- arcticmodal -->
-<script src="js/arcticmodal/jquery.arcticmodal.js"></script>
-
-<!-- Chosen jquery-->
-
-<script type="text/javascript" src="js/chosen.jquery.js"></script>
-
-<!-- Main -->
-<script type="text/javascript" src="js/main.js"></script>
-
-<!-- Custom scripts -->
-<script>
-
-
-</script>
-
+</div> -->
 </body>
 </html>

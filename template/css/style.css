@@ -22116,5 +22116,7 @@ select.form-control {
   color: rgba(88,15,23,1);
 
 }
-
-
+.card{
+  width: 18rem;
+  padding: 10px;
+}
